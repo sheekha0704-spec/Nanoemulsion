@@ -60,6 +60,7 @@ if data:
     c_left, c_right = st.columns(2)
     for i, feat in enumerate(num_features):
         with (c_left if i % 2 == 0 else c_right):
+            # Using standard defaults
             user_inputs[feat] = st.number_input(f"{feat}", value=0.0)
 
     # --- 6. PREDICTION ---
